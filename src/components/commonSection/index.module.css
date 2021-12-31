@@ -1,0 +1,46 @@
+.container{
+    width: 100vw;
+    font-family: Gotham, Arial, san-serif;
+}
+
+.sectionContent{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11.45vw;
+}
+
+.contentWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    width: 37.5vw;
+    height: 37.5vw;
+}
+
+.cardsContainer{
+    width: 50%;
+}
+
+.heading{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.para{
+    font-size: 10px;
+    color: #325E9C;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    background-color: #fff;
+    padding: 1vw;
+}

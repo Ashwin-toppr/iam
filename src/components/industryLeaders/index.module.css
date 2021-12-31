@@ -1,0 +1,63 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #325E9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePic{
+    width: 10.4vw;
+    height: 10.4vw;
+    border-radius: 50%;
+    margin: 30px 0 20px;
+}
+
+.title{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.miniTitle{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.name{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.experince{
+    color: #325E9C;
+}
+
+.desc{
+    text-align: center;
+    line-height: 25px;
+    opacity: .6;
+    width: 75%;
+    margin: 10px 0 30px;
+}
+.card{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px #00000029;
+    width: 58.8vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
