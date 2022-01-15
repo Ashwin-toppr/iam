@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import style from './index.module.css'
 
 export default function Oppotunities() {
+  const navigate = useNavigate();
   return (
     <div className={style.container}>
       <div className={style.section1}>
@@ -26,7 +28,7 @@ export default function Oppotunities() {
                 have increased over 50% in last 5 years.
               </p>
             </div>
-            <button className={style.primaryCta} >Get Started Now</button>
+            <button className={style.primaryCta} onClick={()=>navigate('/course')} >Get Started Now</button>
           </div>
         </div>
       </div>

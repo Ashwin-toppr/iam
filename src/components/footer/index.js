@@ -14,17 +14,16 @@ export default function Footer() {
                 />
               </div>
               <div className={style.desc}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy
+              Building the Next with passion
               </div>
-              <div className={style.inputWrapper}>
+              {/* <div className={style.inputWrapper}>
                 <input
                   className={style.input}
                   type="text"
                   placeholder="Please enter email"
                 />
                 <button className={style.button}>Subscribe</button>
-              </div>
+              </div> */}
             </div>
             <div className={style.redirections}>
               <div className={style.redirectionWrapper} >
@@ -41,7 +40,7 @@ export default function Footer() {
                   src={`${process.env.PUBLIC_URL}/images/uk.png`}
                 />
                 <div>
-                  DigiTaiken Tech Corporation Ltd 79 College Road, Harrow
+                  DigiTaiken Tech Corporation Ltd <br/> 79 College Road, Harrow
                   Middlesex, HA1 1BD,United Kingdom
                 </div>
               </div>
@@ -50,7 +49,7 @@ export default function Footer() {
                   className={style.flag}
                   src={`${process.env.PUBLIC_URL}/images/canada.png`}
                 />
-                <div>DigiTaiken Tech Corporation Toronto, Canada</div>
+                <div>DigiTaiken Tech Corporation <br/> Toronto, Canada</div>
               </div>
               <div className={style.locationWrap}>
                 <img
@@ -58,8 +57,8 @@ export default function Footer() {
                   src={`${process.env.PUBLIC_URL}/images/india.png`}
                 />
                 <div>
-                  DigiTaiken Tech LLP 38/3, H N Halli Lake Road, Off Sarjapura
-                  Road, Doddakanelli, Bangalore, Karnataka, 560035, India
+                  DigiTaiken Tech LLP <br/> 38/3, H N Halli Lake Road, Off Sarjapura
+                  Road, Doddakanelli, <br/> Bangalore, Karnataka, 560035, India
                 </div>
               </div>
             </div>

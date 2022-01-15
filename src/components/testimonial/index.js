@@ -11,7 +11,7 @@ export default function Testimonial() {
           <div className={style.caroContainer}>
             <div className={style.carocard}>
               <div className={style.profilePic}>
-                <img src={`${process.env.PUBLIC_URL}/images/profilepic2.png`} />
+                <img src={`${process.env.PUBLIC_URL}/images/profilepic1.png`} />
               </div>
               <div className={style.desc}>
                 Lorem Ipsum has been the industry’s stand dummy text ever since
@@ -28,18 +28,18 @@ export default function Testimonial() {
                 Lorem Ipsum has been the industry’s stand dummy text ever since
                 the 1500s, when unknown printer took.
               </div>
-              <div className={style.name}>Madely Pondor</div>
+              <div className={style.name}>Katleen Stone</div>
               <div className={style.designation}>IT Specialist</div>
             </div>
             <div className={style.carocard}>
               <div className={style.profilePic}>
-                <img src={`${process.env.PUBLIC_URL}/images/profilepic2.png`} />
+                <img src={`${process.env.PUBLIC_URL}/images/testmonial-3.png`} />
               </div>
               <div className={style.desc}>
                 Lorem Ipsum has been the industry’s stand dummy text ever since
                 the 1500s, when unknown printer took.
               </div>
-              <div className={style.name}>Madely Pondor</div>
+              <div className={style.name}>Alexa Janthaon</div>
               <div className={style.designation}>IT Specialist</div>
             </div>
           </div>

@@ -1,0 +1,132 @@
+.container{
+    width: 100vw;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 0 11.45vw;
+    height: calc( 100vh - 7vw );
+    min-height: 600px;
+}
+
+.content{
+    display: flex;
+    height: auto;
+    padding: 100px 0;
+
+}
+
+.lhs{
+    margin-right: 20px;
+}
+
+.loginCard{
+    width: 42.5vw;
+    height: 17.4;
+    padding: 30px;
+    box-shadow: 0px 0px 10px #00000029;
+    margin-bottom: 42px;
+}
+
+.cardTitle{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.inputFields{
+    display: flex;
+}
+
+.loginInput{
+    border-radius: 5px;
+    border: 1px solid #707070;
+    height: 54px;
+    margin-bottom: 20px;
+    flex: 1;
+    font-size: 14px;
+    color: #888888;
+    padding-left: 22px;
+}
+
+.mr_10{
+    margin-right: 10px;
+}
+
+.slotsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slotCard{
+    width: 17.54vw;
+    height: 4vw;
+    border: 1px solid #707070;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slotCard span{
+    position: absolute;
+    right: 10px;
+    color: #ccc;
+}
+
+.slotsContainer{
+    margin-top: 40px;
+}
+
+.buyNow{
+    width: 100%;
+    border: 1px solid #084C95;
+    border-radius: 5px;
+    height: 43px;
+    background-color: #fff;
+    margin: 15px 0 30px;
+    color: #084C95;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.paymentDetailsCard{
+    width: 27vw;
+    box-shadow: 0px 0px 6px #00000029;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+}
+
+.courseDesc{
+    font-size: 14px;
+    border-bottom: 1px solid #707070;
+}
+
+.courseSubTitle{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.activeSlot{
+    background-color: #084C95;
+    color: #fff;
+}
+
+.borderNone{
+    border-bottom: none;
+}
+
+
+.semibold{
+    font-weight: 500;
+}
+.bold{
+    font-weight: 700;
+}

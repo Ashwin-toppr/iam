@@ -1,0 +1,112 @@
+.container{
+    width: 100vw;
+    height: calc(100vh - 7vw);
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bgImage img{
+    width: 100vw;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 50px;
+    font-weight: 700;
+    margin-top: 70px;
+    color: #fff;
+}
+
+.subTitle{
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+}
+
+.cardsContainer{
+    margin-top: 32px;
+    display: flex;
+    padding: 0 11.45vw;
+    margin-bottom: 93px;
+}
+
+.detailsCard{
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 40px 45px;
+    margin-right: 30px;
+    height: min-content;
+}
+
+.detailTitle{
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.detailsWrap{
+    display: flex;
+    margin-top: 30px;
+}
+
+.timing{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.mr_10{
+    margin-right: 10px;
+}
+
+.useInput{
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 40px 45px;
+    width: min-content;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.input{
+    border: 1px solid #707070;
+    height: 54px;
+    padding-left: 20px;
+    border-radius: 5px;
+    width: 31.25vw;
+    margin-top: 20px;
+}
+
+.textarea{
+    height: 150px;
+    text-align: start;
+    font-family: "roboto";
+    padding-top: 10px;
+}
+
+.button{
+    background-color: #fff;
+    border-radius: 5px;
+    height: 56px;
+    padding: 0 10px;
+    border: 1px solid #325E9C;
+    color: #325E9C;
+    width: 100%;
+    margin-top: 20px;
+}

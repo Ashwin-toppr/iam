@@ -1,11 +1,12 @@
 .container{
     width: 100vw;
     height: 100vh;
+    min-height: 580px;
     background-color: #325E9C;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 .content{
     display: flex;
@@ -19,6 +20,12 @@
     height: 10.4vw;
     border-radius: 50%;
     margin: 30px 0 20px;
+    position: relative;
+    
+}
+
+.profilePic img{
+    width: 100%;
 }
 
 .title{
@@ -33,6 +40,7 @@
     text-transform: uppercase;
     font-size: 10px;
     margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 .name{
@@ -48,9 +56,11 @@
 .desc{
     text-align: center;
     line-height: 25px;
-    opacity: .6;
+    font-size: 14px;
     width: 75%;
     margin: 10px 0 30px;
+    opacity: .5;
+    letter-spacing: 0;
 }
 .card{
     background-color: #fff;
@@ -60,4 +70,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.quote{
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
 }

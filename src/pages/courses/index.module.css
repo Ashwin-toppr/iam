@@ -1,0 +1,125 @@
+.container{
+    width: 100vw;
+}
+
+.content{
+    display: flex;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    justify-content: center;
+    align-items: center;
+    padding: 11.5vw;
+    height: calc(100vh - 7vw);
+    min-height: 580px;
+}
+
+.lhs{
+    margin-right: 11vw;
+}
+
+.heading{
+    font-size: 40px;
+    line-height: 50px;
+    color: #084C95;
+    font-weight: bold;
+}
+
+.subHeading{
+    font-size: 16px;
+    line-height: 26px;
+    opacity: .5;
+    margin-top: 20px;
+}
+
+.bannerImage{
+    width: 557px;
+    height: 538px;
+}
+
+.curriculumContainer{
+    min-height: 580px;
+    padding: 11.5vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.miniTitle{
+    font-size: 12px;
+    color: #084C95;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.miniSubTitle{
+    font-size: 28px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.curriculumContent{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+}
+
+.curriculimCard{
+    width: calc((100vw - 11.5vw) / 3);
+    height: 490px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    margin: 0 20px;
+
+}
+
+.currImage{
+    /* width: 355px; */
+    height: 212px;
+}
+
+.currDesc{
+    width: 100%;
+    position: relative;
+}
+
+.cardContent{
+    position: absolute;
+    top: -25px;
+    background-color: #fff;
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(100% - 20px);
+}
+
+.cardTitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.cardSubTitle{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.bullet{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buyNow{
+    width: 100%;
+    border: 1px solid #084C95;
+    border-radius: 5px;
+    height: 43px;
+    background-color: #fff;
+    margin-top: 22px;
+    color: #084C95;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}

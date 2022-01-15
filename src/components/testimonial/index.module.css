@@ -1,11 +1,12 @@
 .container{
     width: 100vw;
     height: 100vh;
+    min-height: 580px;
     background-color: #F9F9F9;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 .content{
     display: flex;
@@ -38,9 +39,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 19vw;
+    height: auto;
+    min-height: 19vw;
     position: relative;
-    margin: 70px 10px 0; 
+    margin: 4.86vw 4px 0; 
 }
 
 .carocard:hover{
@@ -49,17 +51,23 @@
 }
 
 .profilePic{
+    width: 10.4vw;
+    height: 10.4vw;
     position: absolute;
-    top: -70px;
+    top: -4.86vw;
+}
+
+.profilePic img{
+    width: 100%;
 }
 
 .desc{
     opacity: .4;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 22px;
     width: 80%;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 5.5vw;
 }
 
 .name{
@@ -71,4 +79,16 @@
 .designation{
     opacity: .6;
     font-size: 14px;
+}
+
+@media (max-width:1100px) {
+    .name{
+        margin: 10px;
+    }
+    .desc{
+        margin-top: 7vw;
+    }
+    .designation{
+        padding-bottom: 10px;
+    }
 }

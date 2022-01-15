@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_11607" data-name="Group 11607" transform="translate(-210 -442)">
+    <g id="Ellipse_308" data-name="Ellipse 308" transform="translate(210 442)" fill="#fff" stroke="#325e9c" stroke-width="1">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14.5" fill="none"/>
+    </g>
+    <g id="Group_11601" data-name="Group 11601" transform="translate(-466 -558)">
+      <rect id="Rectangle_2142" data-name="Rectangle 2142" width="18" height="18" transform="translate(682 1006)" fill="none"/>
+      <g id="Icon_feather-mail" data-name="Icon feather-mail" transform="translate(681 1004)">
+        <path id="Path_12375" data-name="Path 12375" d="M4.4,6H15.6A1.368,1.368,0,0,1,17,7.324v7.945a1.368,1.368,0,0,1-1.4,1.324H4.4A1.368,1.368,0,0,1,3,15.269V7.324A1.368,1.368,0,0,1,4.4,6Z" transform="translate(0)" fill="none" stroke="#325e9c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_12376" data-name="Path 12376" d="M17,9l-7,4.635L3,9" transform="translate(0 -1.676)" fill="none" stroke="#325e9c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+.container{
+    background: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+    height: 7vw;
+    width: 100vw;
+    padding: 0 11.45vw;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    /* font-family: sans-serif; */
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #325E9C;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+}
+
+.linkItem{
+    height: 100%;
+    margin-right: 4.9vw;
+    color: #333;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.loginCta{
+    border: 1px solid #325E9C;
+    border-radius: 32px;
+    height: 3.6vw;
+    width: 12.3vw;
+    color: #325E9C;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.loginCta span{
+    margin: 0 10px;
+}

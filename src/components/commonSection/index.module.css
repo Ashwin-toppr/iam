@@ -1,10 +1,10 @@
 .container{
     width: 100vw;
-    font-family: Gotham, Arial, san-serif;
 }
 
 .sectionContent{
     height: 100vh;
+    min-height: 580px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,15 +26,17 @@
 }
 
 .heading{
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 46px;
 }
 
 .para{
-    font-size: 10px;
+    font-size: 12px;
     color: #325E9C;
     text-transform: uppercase;
     margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .card{
@@ -43,4 +45,9 @@
     margin: 16px 0;
     background-color: #fff;
     padding: 1vw;
+}
+
+.cardText{
+    font-weight: 300;
+    margin-left: 10px;
 }

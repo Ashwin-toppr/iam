@@ -1,15 +1,20 @@
 .container{
     width: 100vw;
-    font-family: Gotham, Arial, san-serif;
+    /* font-family: Gotham, Arial, san-serif; */
 }
 
 .section1{
     background-color: #325E9C;
-    height: 100vh;
+    height: calc(100vh - 7vw);
+    min-height: 580px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 11.45vw;
+    background-image: url('../../../public/images/home-bg.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contentWrapper{
@@ -17,7 +22,8 @@
 }
 
 .caroContentHeading{
-    font-size: 24px;
+    font-size: 40px;
+    line-height: 46px;
     font-weight: 600;
     color: #fff;
     letter-spacing: 1px;
@@ -26,10 +32,11 @@
 .caroContentDesc{
     color: #fff;
     font-size: 16px;
-    font-family: Gotham-light,Arial ;
-    line-height: 24px;
+    line-height: 26px;
     margin: 25px 0;
+    font-weight: 300;
     width: 65%;
+    text-align: start;
 }
 
 .dFlex{
@@ -40,6 +47,10 @@
     display: flex;
     align-items: center;
     margin-right: 10px;
+}
+
+.gunPointWrapper img{
+    width: 24px !important;
 }
 
 .icon{
@@ -63,6 +74,9 @@
     width: 15.8vw;
     height: 4.4vw;
     margin-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .secondaryCta{
@@ -88,4 +102,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
 }
+

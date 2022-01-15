@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Group_11610" data-name="Group 11610" transform="translate(-748 -4229)">
+    <circle id="Ellipse_300" data-name="Ellipse 300" cx="24" cy="24" r="24" transform="translate(748 4229)" fill="#325e9c"/>
+    <g id="Group_11532" data-name="Group 11532" transform="translate(23176 5506)">
+      <rect id="Rectangle_1847" data-name="Rectangle 1847" width="24" height="24" transform="translate(-22416 -1265)" fill="none"/>
+      <path id="Icon_metro-quote" data-name="Icon metro-quote" d="M8.355,16.155v6.515h6.515V16.155H11.612A3.19,3.19,0,0,1,14.869,12.9V9.64s-6.515,0-6.515,6.515ZM24.641,12.9V9.64s-6.515,0-6.515,6.515v6.515h6.515V16.155H21.384A3.19,3.19,0,0,1,24.641,12.9Z" transform="translate(-22420.355 -1269.64)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
