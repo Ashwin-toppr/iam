@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/iam/static/css/main.426b758a.css",
-    "main.js": "/iam/static/js/main.c9bafbc3.js",
+    "main.css": "/iam/static/css/main.ad99ebf6.css",
+    "main.js": "/iam/static/js/main.b473b476.js",
     "static/js/787.855d845c.chunk.js": "/iam/static/js/787.855d845c.chunk.js",
-    "static/media/GothamLight.ttf": "/iam/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
-    "static/media/GothamMedium.ttf": "/iam/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
+    "static/media/home-bg.png": "/iam/static/media/home-bg.fba2e640c4f1428d897f.png",
+    "static/media/Roboto-Medium.ttf": "/iam/static/media/Roboto-Medium.7429a63c09f79a1760b0.ttf",
+    "static/media/Roboto-Regular.ttf": "/iam/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
+    "static/media/Roboto-Bold.ttf": "/iam/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
+    "static/media/Roboto-Light.ttf": "/iam/static/media/Roboto-Light.8be2d1487420548b3b8d.ttf",
     "static/media/logo.svg": "/iam/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/iam/index.html",
-    "main.426b758a.css.map": "/iam/static/css/main.426b758a.css.map",
-    "main.c9bafbc3.js.map": "/iam/static/js/main.c9bafbc3.js.map",
+    "main.ad99ebf6.css.map": "/iam/static/css/main.ad99ebf6.css.map",
+    "main.b473b476.js.map": "/iam/static/js/main.b473b476.js.map",
     "787.855d845c.chunk.js.map": "/iam/static/js/787.855d845c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.426b758a.css",
-    "static/js/main.c9bafbc3.js"
+    "static/css/main.ad99ebf6.css",
+    "static/js/main.b473b476.js"
   ]
 }
