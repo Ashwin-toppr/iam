@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Modal } from 'antd';
+import { Modal, Skeleton } from 'antd';
 import s from './index.module.css'
 import axios from 'axios';
 import { useState } from 'react/cjs/react.development';
@@ -22,7 +22,7 @@ export default function PaymentStatus() {
     })
     return (
         <div>
-            {!isLoading && (
+            {!isLoading ? (
                 <Modal visible={true} closable={true} footer={false} >
                     <div className={s.content}>
                         <img src={`${process.env.PUBLIC_URL}/images/payment_${isSuccess ? "success":"failure"}.png`} />
@@ -44,7 +44,7 @@ export default function PaymentStatus() {
                         )}
                     </div>
                 </Modal>
-            )}
+            ):<Skeleton/>}
         </div>
     )
 }
