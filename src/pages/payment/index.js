@@ -5,6 +5,7 @@ import axios from "axios";
 import cx from 'classnames'
 import {  toast } from 'react-toastify';
 import { Skeleton } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
 
 export default function Payment() {
 
@@ -14,9 +15,20 @@ export default function Payment() {
     const [prices,setPrices] = useState({})
     const [activeSlot,setActiveSlot] = useState(0)
     const [paymentLink, setPaymentLink] = useState('')
+    const [showErrMsg,setshowErrMsg] = useState({
+      candidate_mobile_no : false,
+      candidate_email : false
+    })
+
+    const [paymentLoading, setpaymentLoading] = useState(false)
 
 
     const id = window.location.href.split('/').slice(-1)[0]
+    const regex = {
+      candidate_mobile_no : /^[6-9]\d{9}$/gi,
+      candidate_email :  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    }
+
     useEffect(()=>{
         axios
           .get(
@@ -26,10 +38,10 @@ export default function Payment() {
 
             const data = res.data.data.courses
             setCourseData(data);
-            const discount = ((data.price * 50) / 100).toFixed()
-            const gst = ((+data.price * 18) / 100).toFixed();
+            const discount = +((data.price * 50) / 100).toFixed()
+            const gst = +((+discount * 18) / 100).toFixed();
             const subTotal = +discount + +gst
-            const total = subTotal 
+            const total = +subTotal 
             const prices = {
                 gst,
                 subTotal,
@@ -46,15 +58,27 @@ export default function Payment() {
 
 
     const handleOnchange =(e) => {
+      const {value,name} = e.target
+        if(name != "candidate_name" && !regex[name].test(value)){
+          setshowErrMsg({...showErrMsg,[name]:!regex[name].test(value)})
+          debugger
+          return;
+        }
+        console.log({...showErrMsg,[name]:!regex[name]?.test(value)})
+        setshowErrMsg({...showErrMsg,[name]:!regex[name]?.test(value)})
         const data = {
             ...userData,
-            [e.target.name] : e.target.value
+            [name] : value
         }
+        console.log({
+          ...userData,
+          [name] : value
+      })
         setUserData({...data})
-        console.log(data)
     }
 
     const handlePostUserData = () => {
+      setpaymentLoading(true)
         axios.post('https://admin.digitaikenacademy.com/api/candidate/android/candidate-enroll',{
             ...userData,
             course_id : id,
@@ -64,8 +88,10 @@ export default function Payment() {
             const data = res.data.data.res
             window.location.href = data.payment_link
             localStorage.setItem("BOOKING_CODE",data.booking_code)
+            setpaymentLoading(false)
         })
         .catch((res)=>{
+          setpaymentLoading(false)
           toast(res.response.data.message, {
             position: "bottom-right",
             autoClose: 5000,
@@ -82,6 +108,7 @@ export default function Payment() {
     }
 
 
+
   return (
     <div>
       <Header />
@@ -91,11 +118,19 @@ export default function Payment() {
             <div className={s.loginCard}>
               <div className={s.cardTitle}>Please provide your details</div>
               <div className={s.inputFields}>
-                <input className={cx(s.loginInput,s.mr_10)} name="candidate_name" placeholder="Full Name" onChange={handleOnchange}  />
-                <input className={s.loginInput} name="candidate_mobile_no" placeholder="Mobile" onChange={handleOnchange} />
+                <div  className={s.inputWrap}>
+                  <input className={cx(s.loginInput,s.mr_10)} name="candidate_name" placeholder="Full Name" onChange={handleOnchange}  />
+                </div>
+                <div className={s.inputWrap} >
+                  <input className={s.loginInput} name="candidate_mobile_no" placeholder="Mobile" onChange={handleOnchange} />
+                  {showErrMsg.candidate_mobile_no ? <div className={s.errMsg} >Please enter a valid mobile number</div>:null}
+                </div>
               </div>
               <div className={s.inputFields}>
-                <input className={s.loginInput} name="candidate_email" placeholder="Email" onChange={handleOnchange} />
+                <div style={{width : "100%"}} className={s.inputWrap} >
+                  <input className={s.loginInput} name="candidate_email" placeholder="Email" onChange={handleOnchange} />
+                  {showErrMsg.candidate_email ? <div className={s.errMsg} >Please enter a valid email</div>:null}
+                </div>
               </div>
             </div>
             <div className={s.loginCard}>
@@ -108,37 +143,41 @@ export default function Payment() {
                 
                 }
               </div>
-              <button className={s.buyNow} onClick={handlePostUserData} >Pay Now</button>
+              <button className={s.buyNow} onClick={handlePostUserData} >Pay Now {paymentLoading && <LoadingOutlined  />} </button>
             </div>
           </div>
           <div className={s.rhs}>
               {!loading ? (
                 <div className={s.paymentDetailsCard}>
                     <div className={s.courseDesc}>
-                        <div>{courseData.name}</div>
+                        <div className={s.fw_300} >{courseData.name}</div>
                         <div className={s.courseSubTitle} >
-                            <div>Management</div>
-                            <div>INR {courseData.price}</div>
+                            <div className={s.fw_300} >Management</div>
+                            <div className={s.fw_700}>INR {courseData.price.toLocaleString()}</div>
                         </div>
                     </div>
                     <div>
                         <div className={s.courseDesc}>
-                        <div className={cx(s.courseSubTitle, s.semibold)} >
-                            <div>Discount 50%</div>
-                            <div>{prices.discount}</div>
+                        <div className={cx(s.courseSubTitle, s.fw_600)} >
+                            <div>Discount (Launch price)</div>
+                            <div>INR -{prices.discount.toLocaleString()}</div>
                         </div>
                         </div>
                         <div className={s.courseDesc}>
                         
                         <div className={s.courseSubTitle} >
                             <div>GST 18%</div>
+                            <div>{prices.gst.toLocaleString()}</div>
+                        </div>
+                        {/* <div className={s.courseSubTitle} >
+                            <div>Sub Total</div>
                             <div>{prices.gst}</div>
+                        </div> */}
                         </div>
-                        </div>
-                        <div className={cx(s.courseDesc, s.borderNone, s.bold)}>
-                        <div className={cx(s.courseSubTitle)} >
-                            <div>Total</div>
-                            <div>{prices.total}</div>
+                        <div className={cx(s.courseDesc, s.borderNone, s.fw_700)}>
+                        <div className={cx(s.courseSubTitle,s.fw_700)} >
+                            <div>Total Amount</div>
+                            <div>{prices.total.toLocaleString()}</div>
                         </div>
                         </div>
                     </div>

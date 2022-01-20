@@ -40,10 +40,12 @@
     align-items: center;
     justify-content: center;
     height: auto;
-    min-height: 19vw;
+    min-height: 25vw;
     position: relative;
     margin: 4.86vw 4px 0; 
 }
+
+
 
 .carocard:hover{
     background-color: #325E9C;
@@ -70,15 +72,17 @@
     margin-top: 5.5vw;
 }
 
+
 .name{
     font-size: 18px;
     font-weight: 600;
-    margin: 20px;
+    margin: 20px 0 10px;
 }   
 
 .designation{
     opacity: .6;
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 @media (max-width:1100px) {

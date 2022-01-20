@@ -1,23 +1,29 @@
-import React from 'react'
-import style from './index.module.css'
-import { Carousel } from 'react-responsive-carousel';
-
+import React from "react";
+import style from "./index.module.css";
+// import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "antd";
 
 export default function IndustryLeaders() {
-    return (
-      <div className={style.container}>
-        <Carousel showArrows={false} showStatus={false} autoPlay={true} className={style.caroPack} infiniteLoop={true} >
-          <div className={style.content}>
-            <div className={style.miniTitle}>More about our faculty</div>
-            <div className={style.title}>
-              our OKTA Professional Industry Leaders
+  return (
+    <div className={style.container}>
+
+      <Carousel autoplay={true} >
+        <div>
+          <div className={style.contentWrap}>
+            <div className={style.content}>
+              <div className={style.miniTitle}>More about our faculty</div>
+              <div className={style.title}>
+                our OKTA Professional Industry Leaders
+              </div>
             </div>
             <div className={style.card}>
               <div className={style.profilePic}>
-                  <img src={`${process.env.PUBLIC_URL}/images/profilepic1.png`} />
-                  <div className={style.quote}>
-                    <img src={`${process.env.PUBLIC_URL}/images/testimonial-quote.svg`} />
-                  </div>
+                <img src={`${process.env.PUBLIC_URL}/images/jijo.png`} />
+                <div className={style.quote}>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/images/testimonial-quote.svg`}
+                  />
+                </div>
               </div>
               <div className={style.name}>Jijo Jospeh</div>
               <div className={style.experince}>16 Years+ Experince</div>
@@ -30,18 +36,23 @@ export default function IndustryLeaders() {
               </div>
             </div>
           </div>
-
-          <div className={style.content}>
-            <div className={style.miniTitle}>More about our faculty</div>
-            <div className={style.title}>
-              our OKTA Professional Industry Leaders
+        </div>
+        <div>
+          <div className={style.contentWrap}>
+            <div className={style.content}>
+              <div className={style.miniTitle}>More about our faculty</div>
+              <div className={style.title}>
+                our OKTA Professional Industry Leaders
+              </div>
             </div>
             <div className={style.card}>
               <div className={style.profilePic}>
-                  <img src={`${process.env.PUBLIC_URL}/images/leader-2.png`} />
-                  <div className={style.quote}>
-                    <img src={`${process.env.PUBLIC_URL}/images/testimonial-quote.svg`} />
-                  </div>
+                <img src={`${process.env.PUBLIC_URL}/images/riya.png`} />
+                <div className={style.quote}>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/images/testimonial-quote.svg`}
+                  />
+                </div>
               </div>
               <div className={style.name}>Riya Mariyam Raju</div>
               <div className={style.experince}>Trainer</div>
@@ -50,18 +61,23 @@ export default function IndustryLeaders() {
               </div>
             </div>
           </div>
-
-          <div className={style.content}>
-            <div className={style.miniTitle}>More about our faculty</div>
-            <div className={style.title}>
-              our OKTA Professional Industry Leaders
+        </div>
+        <div>
+          <div className={style.contentWrap}>
+            <div className={style.content}>
+              <div className={style.miniTitle}>More about our faculty</div>
+              <div className={style.title}>
+                our OKTA Professional Industry Leaders
+              </div>
             </div>
             <div className={style.card}>
               <div className={style.profilePic}>
-                  <img src={`${process.env.PUBLIC_URL}/images/leader-3.png`} />
-                  <div className={style.quote}>
-                    <img src={`${process.env.PUBLIC_URL}/images/testimonial-quote.svg`} />
-                  </div>
+                <img src={`${process.env.PUBLIC_URL}/images/leader-3.png`} />
+                <div className={style.quote}>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/images/testimonial-quote.svg`}
+                  />
+                </div>
               </div>
               <div className={style.name}>Maria Martin Pognante</div>
               <div className={style.experince}>Trainer</div>
@@ -70,7 +86,8 @@ export default function IndustryLeaders() {
               </div>
             </div>
           </div>
-        </Carousel>
-      </div>
-    );
+        </div>
+      </Carousel>
+    </div>
+  );
 }

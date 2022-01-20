@@ -14,33 +14,30 @@ export default function Testimonial() {
                 <img src={`${process.env.PUBLIC_URL}/images/profilepic1.png`} />
               </div>
               <div className={style.desc}>
-                Lorem Ipsum has been the industry’s stand dummy text ever since
-                the 1500s, when unknown printer took.
+              Wonderful career growth opportunity for college graduates. Our students look forward with excitement to enter into IAM school program.
               </div>
               <div className={style.name}>Madely Pondor</div>
-              <div className={style.designation}>IT Specialist</div>
+              <div className={style.designation}>TPO</div>
             </div>
             <div className={style.carocard}>
               <div className={style.profilePic}>
                 <img src={`${process.env.PUBLIC_URL}/images/profilepic2.png`} />
               </div>
               <div className={style.desc}>
-                Lorem Ipsum has been the industry’s stand dummy text ever since
-                the 1500s, when unknown printer took.
+              I am finding the knowledge that students will gain with this program adds up to their professional growth. We are / I am definite that IAM school program will facilitate freshers and college grads to Kick start their career journey.
               </div>
               <div className={style.name}>Katleen Stone</div>
-              <div className={style.designation}>IT Specialist</div>
+              <div className={style.designation}>HOD</div>
             </div>
             <div className={style.carocard}>
               <div className={style.profilePic}>
                 <img src={`${process.env.PUBLIC_URL}/images/testmonial-3.png`} />
               </div>
               <div className={style.desc}>
-                Lorem Ipsum has been the industry’s stand dummy text ever since
-                the 1500s, when unknown printer took.
+              With Global industry professionals and a dedicated team we are sure this IAM school program will be a great success for both students and the university.
               </div>
               <div className={style.name}>Alexa Janthaon</div>
-              <div className={style.designation}>IT Specialist</div>
+              <div className={style.designation}>Lecturer</div>
             </div>
           </div>
         </div>

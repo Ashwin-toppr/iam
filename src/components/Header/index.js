@@ -18,7 +18,7 @@ export default function Header() {
         <div className={s.container} >
             <div className={s.content} >
                 <div className={s.logo} onClick={()=>navigate('/iam')} >
-                    IAM School
+                    <img src={`${process.env.PUBLIC_URL}/images/logo_digi.png`} />
                 </div>
                 <div className={s.links}>
                     {headerItems.map((item,i)=>(

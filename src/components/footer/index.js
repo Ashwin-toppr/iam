@@ -1,7 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './index.module.css'
+import axios from 'axios';
+import { LoadingOutlined } from '@ant-design/icons';
 
 export default function Footer() {
+  const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const [loading, setloading] = useState(false)
+  const [showErrMsg, setshowErrMsg] = useState(false)
+  const [email, setEmail] = useState('')
+  const [showSuccessMsg, setshowSuccessMsg] = useState(false)
+
+
+  const handleSubmit = () => {
+
+    setloading(true)
+
+    axios.post('https://admin.digitaikenacademy.com/api/candidate/android/add-subscribe',{email : email})
+    .then((res)=>{
+      setloading(false)
+      setshowSuccessMsg(true)
+    })
+
+    .catch(()=>{
+      setloading(false)
+    })
+
+  }
+
+  const handleChange = (e) => {
+    setEmail(e.target.value)
+    if(!e.target.value.match(validRegex)){
+      setshowErrMsg(true)
+    }else{
+      setshowErrMsg(false)
+    }
+  }
+
     return (
       <div className={style.container}>
         <div className={style.content}>
@@ -16,14 +50,16 @@ export default function Footer() {
               <div className={style.desc}>
               Building the Next with passion
               </div>
-              {/* <div className={style.inputWrapper}>
-                <input
-                  className={style.input}
-                  type="text"
-                  placeholder="Please enter email"
-                />
-                <button className={style.button}>Subscribe</button>
-              </div> */}
+              <div className={style.inputWrapper}>
+                <input className={style.input} onChange={handleChange} type={"text"} placeholder='Please enter a mail' />
+                <button className={style.button} onClick={handleSubmit} >Subscribe {loading && <LoadingOutlined  />} </button>
+              </div>
+              {showErrMsg && 
+                <div className={style.errMsg} >The input is not valid E-mail!</div>
+              }
+              {showSuccessMsg && 
+                <div className={style.errMsg} >Successfully Subscribed!</div>
+              }
             </div>
             <div className={style.redirections}>
               <div className={style.redirectionWrapper} >

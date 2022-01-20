@@ -18,6 +18,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import PaymentStatus from "./pages/pyamentStatus";
 import 'antd/dist/antd.css';
 import { ToastContainer } from "react-toastify";
+import AboutUs from "./pages/aboutus";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/payment/:id" element={<Payment/>} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/payment_status" element={<PaymentStatus />} />
+          <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
       </Router>
       <ToastContainer/>
