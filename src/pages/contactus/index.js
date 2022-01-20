@@ -45,8 +45,7 @@ export default function ContactUs() {
         if(name=="email"){
             const candidate_email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
             setshowErrMsg(!candidate_email.test(value))
-            // const ab = candidate_email.test(value)
-            // debugger
+            
 
         }
         const payload = {
