@@ -64,7 +64,7 @@ export default function ContactUs() {
                 </div>
                 <div className={s.content}>
                     <div className={s.title}>Contact us</div>
-                    <div className={s.subTitle}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever.</div>
+                    {/* <div className={s.subTitle}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever.</div> */}
                     <div className={s.cardsContainer}>
                         <div className={s.detailsCard} >
                             <div className={s.detailTitle}>Contact us</div>
@@ -86,7 +86,7 @@ export default function ContactUs() {
                             </div>
                             <input  className={s.input} onChange={handleChange} value={data?.name} name='name' placeholder='Full Name' />
                             <input  className={s.input} onChange={handleChange} value={data?.email} name='email' autoComplete="off" placeholder='Email' />
-                            {showErrMsg && <div className={s.errMsg} >Please write valid name!</div>}
+                            {showErrMsg && <div className={s.errMsg} >Please enter valid email!</div>}
                             <textarea onChange={handleChange} value={data?.message} className={cx(s.input,s.textarea)} name='message' placeholder='Type Message' />
                             <button className={s.button} onClick={handleSubmit} >Send Message</button>
                         </div>
