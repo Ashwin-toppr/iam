@@ -79,6 +79,7 @@ export default function Payment() {
 
     const handlePostUserData = () => {
       setpaymentLoading(true)
+      if(showErrMsg.candidate_email || showErrMsg.candidate_mobile_no) return;
         axios.post('https://admin.digitaikenacademy.com/api/candidate/android/candidate-enroll',{
             ...userData,
             course_id : id,
@@ -119,16 +120,16 @@ export default function Payment() {
               <div className={s.cardTitle}>Please provide your details</div>
               <div className={s.inputFields}>
                 <div  className={s.inputWrap}>
-                  <input className={cx(s.loginInput,s.mr_10)} name="candidate_name" placeholder="Full Name" onChange={handleOnchange}  />
+                  <input className={cx(s.loginInput,s.mr_10)} name="candidate_name" autoComplete="off" placeholder="Full Name" onChange={handleOnchange}  />
                 </div>
                 <div className={s.inputWrap} >
-                  <input className={s.loginInput} name="candidate_mobile_no" placeholder="Mobile" onChange={handleOnchange} />
+                  <input className={s.loginInput} name="candidate_mobile_no" autoComplete="off" placeholder="Mobile" onChange={handleOnchange} />
                   {showErrMsg.candidate_mobile_no ? <div className={s.errMsg} >Please enter a valid mobile number</div>:null}
                 </div>
               </div>
               <div className={s.inputFields}>
                 <div style={{width : "100%"}} className={s.inputWrap} >
-                  <input className={s.loginInput} name="candidate_email" placeholder="Email" onChange={handleOnchange} />
+                  <input className={s.loginInput} name="candidate_email" autoComplete="off"  placeholder="Email" onChange={handleOnchange} />
                   {showErrMsg.candidate_email ? <div className={s.errMsg} >Please enter a valid email</div>:null}
                 </div>
               </div>
@@ -138,7 +139,7 @@ export default function Payment() {
               <div className={s.slotsContainer}>
                 {loading ? (<Skeleton/>):(
                   courseData?.batch?.map((batch,i)=>(
-                        <div key={batch?.id} onClick={()=>setActiveSlot(batch?.id)} className={cx(s.slotCard,{[s.activeSlot]: activeSlot == batch.id})}>{`${batch.start_date} (${batch.name})`} <span><img src={`${process.env.PUBLIC_URL}/images/clock-black.svg`} /></span></div>
+                        <div key={batch?.id} onClick={()=>setActiveSlot(batch?.id)} className={cx(s.slotCard,{[s.activeSlot]: activeSlot == batch.id})}>{`${batch.start_date} (${batch.name})`} <span><img src={`${process.env.PUBLIC_URL}/images/${activeSlot == batch.id ? 'clock':'clock-black'}.svg`} /></span></div>
                   )))
                 
                 }
@@ -167,7 +168,7 @@ export default function Payment() {
                         
                         <div className={s.courseSubTitle} >
                             <div>GST 18%</div>
-                            <div>{prices.gst.toLocaleString()}</div>
+                            <div>INR {prices.gst.toLocaleString()}</div>
                         </div>
                         {/* <div className={s.courseSubTitle} >
                             <div>Sub Total</div>
@@ -177,7 +178,7 @@ export default function Payment() {
                         <div className={cx(s.courseDesc, s.borderNone, s.fw_700)}>
                         <div className={cx(s.courseSubTitle,s.fw_700)} >
                             <div>Total Amount</div>
-                            <div>{prices.total.toLocaleString()}</div>
+                            <div>INR {prices.total.toLocaleString()}</div>
                         </div>
                         </div>
                     </div>

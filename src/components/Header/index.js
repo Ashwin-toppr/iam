@@ -6,8 +6,8 @@ export default function Header() {
 
     const headerItems = [
         {label:'Home',route:'iam'},
-        {label:'About',route:'/'},
-        {label:'Team',route:'/'},
+        {label:'About',route:'aboutus'},
+        {label:'Team',route:'team'},
         {label:'Course',route:'course'},
         {label:'Contact Us',route:'contact'}
     ]

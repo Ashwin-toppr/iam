@@ -53,12 +53,22 @@ export default function CourseItem() {
               </p>
               <div className={s.subTitle}>Participants will learn how to:</div>
               <ul className={s.list} >
-                  {item.key_highlights.map((item)=>(
+                  {item.participants_will_learn_how_to.map((item)=>(
                       <li className={s.listItem} >{item}</li>
                   ))}
               </ul>
-              <div className={s.subTitle}>Duration:</div>
-              <p className={s.listItem}>{item.duration} mins</p>
+              <div className={s.subTitle}>Who this course is for:</div>
+              <ul className={s.list} >
+                  {item.who_this_course_is_for.map((item)=>(
+                      <li className={s.listItem} >{item}</li>
+                  ))}
+              </ul>
+              <div className={s.subTitle}>Setup Requirements:</div>
+              <ul className={s.list} >
+                  {item.setup_requirements.map((item)=>(
+                      <li className={s.listItem} >{item}</li>
+                  ))}
+              </ul>
               <div style={{display: "flex", justifyContent:'center'}} >
                 <button onClick={handleCtaClick} className={s.buyNow} >Proceed</button>
               </div>

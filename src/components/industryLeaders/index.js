@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import style from "./index.module.css";
 // import { Carousel } from 'react-responsive-carousel';
 import { Carousel } from "antd";
 
 export default function IndustryLeaders() {
+  const industryRef = useRef()
+
+  const url = window.location.href;
+  useEffect(()=>{
+    if(url.includes("team")){
+      industryRef.current.scrollIntoView() 
+    }
+  },[url])
+
   return (
-    <div className={style.container}>
+    <div ref={industryRef} className={style.container}>
 
       <Carousel autoplay={true} >
         <div>

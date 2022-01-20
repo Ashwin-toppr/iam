@@ -8,7 +8,7 @@ export default function Footer() {
   const [loading, setloading] = useState(false)
   const [showErrMsg, setshowErrMsg] = useState(false)
   const [email, setEmail] = useState('')
-  const [showSuccessMsg, setshowSuccessMsg] = useState(false)
+  const [showSuccessMsg, setshowSuccessMsg] = useState("")
 
 
   const handleSubmit = () => {
@@ -18,11 +18,13 @@ export default function Footer() {
     axios.post('https://admin.digitaikenacademy.com/api/candidate/android/add-subscribe',{email : email})
     .then((res)=>{
       setloading(false)
-      setshowSuccessMsg(true)
+      setshowSuccessMsg(res.data.message)
+      // debugger
     })
 
-    .catch(()=>{
+    .catch((err)=>{
       setloading(false)
+      console.log(err);
     })
 
   }
@@ -58,7 +60,7 @@ export default function Footer() {
                 <div className={style.errMsg} >The input is not valid E-mail!</div>
               }
               {showSuccessMsg && 
-                <div className={style.errMsg} >Successfully Subscribed!</div>
+                <div className={style.errMsg} >{showSuccessMsg}</div>
               }
             </div>
             <div className={style.redirections}>

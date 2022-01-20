@@ -91,17 +91,19 @@ export default function Courses() {
                                 src={`${process.env.PUBLIC_URL}/images/wallet.svg`}
                               />
                             </span>
-                            <span>{item.price} INR(+18% GST)</span>
+                            <span>{item.price.toLocaleString()} INR(+18% GST)</span>
                           </div>
                         </div>
-                        <div>
-                          <button
-                            className={style.buyNow}
-                            onClick={() => handleCtaClick(item.id)}
-                          >
-                            Buy Now
-                          </button>
-                        </div>
+                        {item.status ? 
+                          <div>
+                            <button
+                              className={style.buyNow}
+                              onClick={() => handleCtaClick(item.id)}
+                            >
+                              Buy Now
+                            </button>
+                          </div>:null
+                        }
                       </div>
                     </div>
                   </div>

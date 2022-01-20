@@ -37,7 +37,7 @@
 
 .curriculumContainer{
     min-height: 580px;
-    padding: 11.5vw;
+    padding:  7vw 11.5vw 11.5vw;
     justify-content: center;
     display: flex;
     flex-direction: column;

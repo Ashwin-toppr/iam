@@ -32,6 +32,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/payment_status" element={<PaymentStatus />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/team" element={<HomeLanding />} />
         </Routes>
       </Router>
       <ToastContainer/>

@@ -12,7 +12,7 @@ export default function Home() {
 
     return (
       <div className={style.container}>
-            <Carousel autoplay={true}  >
+            <Carousel autoplay={false}  >
               <div className={style.section1}>
                 <div className={style.contentWrapper}>
                     <div className={style.caroContentBody}>
@@ -32,13 +32,11 @@ export default function Home() {
                       </div>
                       <div className={style.ctaWrapper}>
                           <button className={style.primaryCta} onClick={()=> navigate('/course')} >Get Started Now</button>
-                          <button className={style.secondaryCta} >Demo Class</button>
+                          {/* <button className={style.secondaryCta} >Demo Class</button> */}
                       </div>
                     </div>
                   <div className={style.videoContet}>
-                      <video width="100%" height="100%" controls>
-                          <source src="https://dms.licdn.com/playlist/C4E05AQHgNMK-Ox-mwQ/mp4-640p-30fp-crf28/0/1641487605950?e=1642582800&v=beta&t=5ZqQun3qQ0Ds0wa7UvWFBYyAEjjrNxB-zGcvYE-gVFg" type="video/mp4"/>
-                      </video>
+                      <iframe class="mw-youtube-video" width="100%" height="100%" src="https://www.youtube.com/embed/rzl_yG5ofbY?enablejsapi=1&version=3&playerapiid=ytplayer" modestbranding="0"  controls="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
@@ -61,13 +59,11 @@ export default function Home() {
                       </div>
                       <div className={style.ctaWrapper}>
                           <button className={style.primaryCta} onClick={()=> navigate('/course')} >Get Started Now</button>
-                          <button className={style.secondaryCta} >Demo Class</button>
+                          {/* <button className={style.secondaryCta} >Demo Class</button> */}
                       </div>
                     </div>
                   <div className={style.videoContet}>
-                      <video width="100%" height="100%" controls>
-                          <source src="https://dms.licdn.com/playlist/C4D05AQGpxSTCUhv0AA/mp4-720p-30fp-crf28/0/1641822996591?e=1642582800&v=beta&t=zSnsWI69KIYkb1fQmxswy8arBQ0BpWL-UNol9clptP0" type="video/mp4"/>
-                      </video>
+                    <iframe class="mw-youtube-video" width="100%" height="100%" src="https://www.youtube.com/embed/uH8v47EQ9H8?enablejsapi=1&version=3&playerapiid=ytplayer" modestbranding="0"  controls="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
@@ -90,13 +86,12 @@ export default function Home() {
                       </div>
                       <div className={style.ctaWrapper}>
                           <button className={style.primaryCta} onClick={()=> navigate('/course')} >Get Started Now</button>
-                          <button className={style.secondaryCta} >Demo Class</button>
+                          {/* <button className={style.secondaryCta} >Demo Class</button> */}
                       </div>
                     </div>
                   <div className={style.videoContet}>
-                      <video width="100%" height="100%" controls>
-                          <source src="https://dms.licdn.com/playlist/C4D05AQED3PiUgmNGMA/mp4-720p-30fp-crf28/0/1642427114575?e=1642582800&v=beta&t=5PneaDiYS5H8lJE3X5nrMASQ7nUUyMaTu28aoB2EB98" type="video/mp4"/>
-                      </video>
+                  <iframe class="mw-youtube-video" width="100%" height="100%" src="https://www.youtube.com/embed/0whdVuoLLNs?enablejsapi=1&version=3&playerapiid=ytplayer" modestbranding="0"  controls="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                   </div>
                 </div>
               </div>

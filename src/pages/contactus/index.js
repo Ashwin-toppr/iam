@@ -12,6 +12,7 @@ export default function ContactUs() {
         email:'',
         message:''
     })
+    const [showErrMsg, setshowErrMsg] = useState(false)
 
     const handleSubmit = () => {
         axios.post('https://admin.digitaikenacademy.com/api/candidate/android/save-contact-enquiry',{
@@ -41,6 +42,13 @@ export default function ContactUs() {
 
     const handleChange = (e) => {
         const {name, value} = e.target;
+        if(name=="email"){
+            const candidate_email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+            setshowErrMsg(!candidate_email.test(value))
+            // const ab = candidate_email.test(value)
+            // debugger
+
+        }
         const payload = {
             ...data,
             [name]:value
@@ -78,7 +86,8 @@ export default function ContactUs() {
                             Get in Touch
                             </div>
                             <input  className={s.input} onChange={handleChange} value={data?.name} name='name' placeholder='Full Name' />
-                            <input  className={s.input} onChange={handleChange} value={data?.email} name='email' placeholder='Email' />
+                            <input  className={s.input} onChange={handleChange} value={data?.email} name='email' autoComplete="off" placeholder='Email' />
+                            {showErrMsg && <div className={s.errMsg} >Please write valid name!</div>}
                             <textarea onChange={handleChange} value={data?.message} className={cx(s.input,s.textarea)} name='message' placeholder='Type Message' />
                             <button className={s.button} onClick={handleSubmit} >Send Message</button>
                         </div>
