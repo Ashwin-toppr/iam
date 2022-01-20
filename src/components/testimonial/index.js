@@ -26,7 +26,7 @@ export default function Testimonial() {
               <div className={style.desc}>
               I am finding the knowledge that students will gain with this program adds up to their professional growth. We are / I am definite that IAM school program will facilitate freshers and college grads to Kick start their career journey.
               </div>
-              <div className={style.name}>Katleen Stone</div>
+              <div className={style.name}>Gagan Saxena</div>
               <div className={style.designation}>Founder & CEO - GreenNinja | HQbe</div>
             </div>
             <div className={style.carocard}>
