@@ -27,7 +27,7 @@ export default function IndustryLeaders() {
             </div>
             <div className={style.card}>
               <div className={style.profilePic}>
-                <img src={`${process.env.PUBLIC_URL}/images/jijoprofilepic.png`} />
+                <img src={`${process.env.PUBLIC_URL}/images/jijo.png`} />
                 <div className={style.quote}>
                   <img
                     src={`${process.env.PUBLIC_URL}/images/testimonial-quote.svg`}
