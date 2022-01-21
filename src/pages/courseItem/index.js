@@ -51,24 +51,36 @@ export default function CourseItem() {
               <p className={s.desc}>
                 {item.course_details}
               </p>
-              <div className={s.subTitle}>Participants will learn how to:</div>
-              <ul className={s.list} >
-                  {item.participants_will_learn_how_to.map((item)=>(
-                      <li className={s.listItem} >{item}</li>
-                  ))}
-              </ul>
-              <div className={s.subTitle}>Who this course is for:</div>
-              <ul className={s.list} >
-                  {item.who_this_course_is_for.map((item)=>(
-                      <li className={s.listItem} >{item}</li>
-                  ))}
-              </ul>
-              <div className={s.subTitle}>Setup Requirements:</div>
-              <ul className={s.list} >
-                  {item.setup_requirements.map((item)=>(
-                      <li className={s.listItem} >{item}</li>
-                  ))}
-              </ul>
+              {item.participants_will_learn_how_to.length ? (
+                <>
+                  <div className={s.subTitle}>Participants will learn how to:</div>
+                  <ul className={s.list} >
+                      {item.participants_will_learn_how_to.map((item)=>(
+                          <li className={s.listItem} >{item}</li>
+                      ))}
+                  </ul>
+                </>
+              ):null}
+              {item.who_this_course_is_for.length ? (
+                <>
+                  <div className={s.subTitle}>Who this course is for:</div>
+                  <ul className={s.list} >
+                      {item.who_this_course_is_for.map((item)=>(
+                          <li className={s.listItem} >{item}</li>
+                      ))}
+                  </ul>
+                </>
+              ):null}
+              {item.setup_requirements.length ? (
+                <>
+                  <div className={s.subTitle}>Setup Requirements:</div>
+                  <ul className={s.list} >
+                      {item.setup_requirements.map((item)=>(
+                          <li className={s.listItem} >{item}</li>
+                      ))}
+                  </ul>
+                </>
+              ):null}
               <div style={{display: "flex", justifyContent:'center'}} >
                 <button onClick={handleCtaClick} className={s.buyNow} >Proceed</button>
               </div>

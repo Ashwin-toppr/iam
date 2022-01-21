@@ -25,7 +25,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/iam/" element={<HomeLanding />} />
+          <Route path="/" element={<HomeLanding />} />
           <Route path="/course" element={<Courses />} />
           <Route path="/course/:id" element={<CourseItem />} />
           <Route path="/payment/:id" element={<Payment/>} />
