@@ -136,6 +136,10 @@
     width: 47%;
     margin-bottom: 20px;
 }
+.inputWrap span{
+    position: absolute;
+    transform: translate(20px, 70%);
+}
 
 .errMsg{
     color: red;
@@ -151,4 +155,8 @@
 
 .fw_700{
     font-weight: 700;
+}
+
+.mblInput{
+    padding-left: 52px;
 }

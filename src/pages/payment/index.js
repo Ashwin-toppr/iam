@@ -123,7 +123,8 @@ export default function Payment() {
                   <input className={cx(s.loginInput,s.mr_10)} name="candidate_name" autoComplete="off" placeholder="Full Name" onChange={handleOnchange}  />
                 </div>
                 <div className={s.inputWrap} >
-                  <input className={s.loginInput} name="candidate_mobile_no" autoComplete="off" placeholder="Mobile" onChange={handleOnchange} />
+                  <span>+91</span>
+                  <input className={cx(s.loginInput,s.mblInput)} name="candidate_mobile_no" autoComplete="off" placeholder="Mobile" onChange={handleOnchange} />
                   {showErrMsg.candidate_mobile_no ? <div className={s.errMsg} >Please enter a valid mobile number</div>:null}
                 </div>
               </div>
