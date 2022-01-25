@@ -20,8 +20,7 @@ export default function Oppotunities() {
                 2026.
               </p>
               <p className={style.para} >
-                This will result in steady increase of demand of skilled
-                professiona by 15% every year.
+              This will result in the steady increase of demand of skilled professionals the number of open positions in IAM have increased by 50% in the last 5 years.
               </p>
               <p className={style.para} >
                 IAM skills are hard to find, number of open position for IAM

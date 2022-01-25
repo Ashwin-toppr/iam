@@ -42,9 +42,7 @@ export default function Courses() {
                 OKTA Training and Certification Course Online
               </div>
               <div className={style.subHeading}>
-                The Okta Course includes concepts like Amalgamating Okta into
-                our organization for simple user access to data and
-                applications, Hosting Applications in Okta.
+              The Okta Course includes concepts like Amalgamating Okta into our organization for simple user access to data and applications, and Hosting Applications in Okta.
               </div>
             </div>
             <div className={style.rhs}>

@@ -29,12 +29,12 @@ export default function CommonSection({ isTrainingSection }) {
           >
             <h2 className={style.heading}>
               {isTrainingSection
-                ? "What is there during and after the training for you?"
-                : "Live project and opportunity to be part of global assignment"}
+                ? "What is there during and after training for you?"
+                : "Work on live projects and get the opportunity to be part global assignments."}
             </h2>
             {isTrainingSection && (
               <p className={style.para}>
-                Details about 5 weeks industry designed training program
+                DETAILS ABOUT OUR 5 WEEKS INDUSTRY DESIGNED TRAINING PROGRAM
               </p>
             )}
             <div className={style.cardsBody}>
@@ -83,7 +83,7 @@ export default function CommonSection({ isTrainingSection }) {
                 <div className={style.cardText}>
                   {isTrainingSection
                     ? "Gain knowledge on Secure Identity Management and mobility concepts"
-                    : "Get assistance from Digitaiken team to get placed with some of the top brands"}
+                    : "Get assistance from Digitaiken’s team to get placed with some of the top brands"}
                 </div>
               </div>
             </div>

@@ -81,6 +81,27 @@ export default function CourseItem() {
                   </ul>
                 </>
               ):null}
+              {item.batch.length ? (
+                <>
+                  <div className={s.subTitle}>Batches:</div>
+                  <ul className={s.list} >
+                      {item.batch.map((item)=>(
+                          <li className={s.listItem}  >{item.start_date} {`(${item.name})`}</li>
+                      ))}
+                  </ul>
+                </>
+              ):null}
+
+              {item.duration ? (
+                <>
+                  <div className={s.subTitle}>Duration:</div>
+                  <ul className={s.list} >
+                      {/* {item.batch.map((item)=>( */}
+                          <li className={s.listItem}  >{item.duration}</li>
+                      {/* ))} */}
+                  </ul>
+                </>
+              ):null}
               <div style={{display: "flex", justifyContent:'center'}} >
                 <button onClick={handleCtaClick} className={s.buyNow} >Proceed</button>
               </div>

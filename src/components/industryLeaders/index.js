@@ -22,7 +22,7 @@ export default function IndustryLeaders() {
             <div className={style.content}>
               <div className={style.miniTitle}>More about our faculty</div>
               <div className={style.title}>
-                our OKTA Professional Industry Leaders
+                Our OKTA Professional Industry Leaders
               </div>
             </div>
             <div className={style.card}>
@@ -34,14 +34,10 @@ export default function IndustryLeaders() {
                   />
                 </div>
               </div>
-              <div className={style.name}>Jijo Jospeh</div>
-              <div className={style.experince}>16 Years+ Experince</div>
+              <div className={style.name}>Jijo Joseph</div>
+              <div className={style.experince}>Okta Consultant & Trainer</div>
               <div className={style.desc}>
-                Jijo leads DigiTaiken’s identity and Access Management practices
-                across globe. He is an experienced security leader with over 16+
-                years’ experience in helping some of the largest global and
-                regional companies transform their security programs. Deep
-                knowledge in the fields of Identity and Access Management.
+              Jijo leads DigiTaiken’s identity and Access Management practices across the globe. He is an experienced security leader with over 16+ years’ experience in helping some of the largest global and regional companies transform their security programs. He has deep knowledge in the fields of Identity and Access Management.
               </div>
             </div>
           </div>
@@ -51,7 +47,7 @@ export default function IndustryLeaders() {
             <div className={style.content}>
               <div className={style.miniTitle}>More about our faculty</div>
               <div className={style.title}>
-                our OKTA Professional Industry Leaders
+                Our OKTA Professional Industry Leaders
               </div>
             </div>
             <div className={style.card}>
@@ -64,9 +60,9 @@ export default function IndustryLeaders() {
                 </div>
               </div>
               <div className={style.name}>Riya Mariyam Raju</div>
-              <div className={style.experince}>Trainer</div>
+              <div className={style.experince}>Okta Professional & Trainer</div>
               <div className={style.desc}>
-              Riya is a dynamic young Okta profession and responsible for managing multiple Identity Environment. She is one of the key pillars in Digitaiken’s digital journey driving new initiatives around Identity and access management building her knowledge and expertise at the same time.
+              Riya is a dynamic young Okta professional, responsible for managing multiple Identity Environments. She is one of the key pillars in Digitaiken’s digital journey, driving new initiatives around Identity and Access Management building her knowledge and expertise at the same time.
               </div>
             </div>
           </div>
@@ -76,7 +72,7 @@ export default function IndustryLeaders() {
             <div className={style.content}>
               <div className={style.miniTitle}>More about our faculty</div>
               <div className={style.title}>
-                our OKTA Professional Industry Leaders
+                Our OKTA Professional Industry Leaders
               </div>
             </div>
             <div className={style.card}>

@@ -74,7 +74,7 @@ export default function Home() {
                     <div className={style.caroContentBody}>
                       <div className={style.caroContentHeading}>IAM School</div>
                       <div className={style.caroContentDesc}>
-                      Digitaiken is digital solution company working on product Development, digital workplace solution and Identity and Access management.
+                      Digitaiken is a digital solution company working on product Development, digital workplace solutions and Identity and Access management.
                       </div>
                       <div className={style.dFlex}>
                         <div className={style.gunPointWrapper}>
