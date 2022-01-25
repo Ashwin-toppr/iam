@@ -25,7 +25,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<HomeLanding />} />
+          <Route exact path="/" element={<HomeLanding />} />
           <Route path="/course" element={<Courses />} />
           <Route path="/course/:id" element={<CourseItem />} />
           <Route path="/payment/:id" element={<Payment/>} />

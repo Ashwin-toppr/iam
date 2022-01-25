@@ -21,7 +21,8 @@
 }
 
 .logo{
-    width: 19.3vw;
+    width: 17vw;
+    height: 53px;
     margin-left: -10px;
 }
 
@@ -45,8 +46,9 @@
     width: 10.41vw;
     margin-top: 50px;
 }
-.redirectionWrapper a{
+.redirectionWrapper div{
     color: #fff;
+    cursor: pointer;
 }
 .input::placeholder{
     color: #fff;
@@ -108,4 +110,37 @@ a{
 .errMsg{
     color: #fff;
     margin-top: 10px;
+}
+.socialFooter{
+    display: flex;
+    height: 65px;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    justify-content: space-around;
+}
+
+.socialWrap img{
+    width: 24px;
+    height: 24px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.legal{
+    display: flex;
+}
+
+.legal div{
+    margin: 0 10px;
+    cursor: pointer;
+    list-style: none;
+    cursor: pointer;
+}
+
+.legal div a{
+    color: #fff;
 }

@@ -59,9 +59,9 @@ export default function Payment() {
 
     const handleOnchange =(e) => {
       const {value,name} = e.target
-        if(name != "candidate_name" && !regex[name].test(value)){
+        if(["candidate_email","candidate_mobile_no"].includes(name) && !regex[name].test(value)){
           setshowErrMsg({...showErrMsg,[name]:!regex[name].test(value)})
-          debugger
+          // debugger
           return;
         }
         console.log({...showErrMsg,[name]:!regex[name]?.test(value)})
@@ -131,6 +131,24 @@ export default function Payment() {
                 <div style={{width : "100%"}} className={s.inputWrap} >
                   <input className={s.loginInput} name="candidate_email" autoComplete="off"  placeholder="Email" onChange={handleOnchange} />
                   {showErrMsg.candidate_email ? <div className={s.errMsg} >Please enter a valid email</div>:null}
+                </div>
+              </div>
+              <div className={s.inputFields}>
+                <div style={{width : "100%"}} className={s.inputWrap} >
+                  <input className={s.loginInput} name="candidate_address" autoComplete="off"  placeholder="Address" onChange={handleOnchange} />
+                </div>
+              </div>
+              <div className={s.inputFields}>
+                <div  className={s.inputWrap}>
+                  <input className={cx(s.loginInput,s.mr_10)} name="candidate_city" autoComplete="off" placeholder="City" onChange={handleOnchange}  />
+                </div>
+                <div className={s.inputWrap} >
+                  <input className={s.loginInput} name="candidate_state" autoComplete="off" placeholder="State" onChange={handleOnchange} />
+                </div>
+              </div>
+              <div className={s.inputFields}>
+                <div  className={s.inputWrap}>
+                  <input className={cx(s.loginInput,s.mr_10)} name="candidate_pincode" autoComplete="off" placeholder="Pincode" onChange={handleOnchange}  />
                 </div>
               </div>
             </div>

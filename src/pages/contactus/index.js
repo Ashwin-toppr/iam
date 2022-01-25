@@ -78,7 +78,7 @@ export default function ContactUs() {
                                     <span>iamschool@digitaiken.com</span>
                                 </div>
                             </div>
-                            <div className={s.timing} >24 Hours / 7 Days Open Office time: 10 AM - 5:30 PM</div>
+                            <div className={s.timing} >24 Hours / 7 Days Open Office hours: 10 AM - 5:30 PM</div>
                         </div>
                         <div className={s.useInput}>
                             <div className={s.detailTitle}>
