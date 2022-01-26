@@ -80,7 +80,7 @@ export default function Courses() {
                                 src={`${process.env.PUBLIC_URL}/images/calendar-black.svg`}
                               />
                             </span>
-                            <span>{item.duration} weeks</span>
+                            <span>{item.duration}</span>
                           </div>
                           <div className={style.bullet}>
                             <span>

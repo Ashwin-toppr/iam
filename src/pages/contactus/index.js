@@ -24,6 +24,16 @@ export default function ContactUs() {
                 email:'',
                 message:''
             })
+            toast(res.data.message, {
+                position: "top-bottom",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                type:"error"
+            });
         })
         .catch((res)=>{
             console.log(res.data)
@@ -78,7 +88,7 @@ export default function ContactUs() {
                                     <span>iamschool@digitaiken.com</span>
                                 </div>
                             </div>
-                            <div className={s.timing} >24 Hours / 7 Days Open Office hours: 10 AM - 5:30 PM</div>
+                            <div className={s.timing} > Reach us 24 Hours / 7 Days a week <br></br> (Open Office hours 10 AM - 5:30 PM) </div>
                         </div>
                         <div className={s.useInput}>
                             <div className={s.detailTitle}>

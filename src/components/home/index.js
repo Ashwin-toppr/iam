@@ -19,7 +19,7 @@ export default function Home() {
                     <div className={style.caroContentBody}>
                       <div className={style.caroContentHeading}>Who we are ?</div>
                       <div className={style.caroContentDesc}>
-                      IAM School is a craft by Industry’s best Identity professionals to develop talented skills in the area of secure Identity and Access Management.
+                      IAM School is a craft by Industry’s best Identity professionals to help develop talented skills… 
                       </div>
                       <div className={style.dFlex}>
                         <div className={style.gunPointWrapper}>
@@ -46,7 +46,10 @@ export default function Home() {
                     <div className={style.caroContentBody}>
                       <div className={style.caroContentHeading}>Lab as a Service</div>
                       <div className={style.caroContentDesc}>
-                      IAM Lab is a customised cloud based infrastructure on identity solution which is aligned to the real identity environment of business empowered with Digitaiken IAM experts to help mitigate risk and seamless identity solution rollout.
+                        IAM Lab is a customized cloud-based infrastructure on identity
+                        solutions which is aligned to real businesses’ identity environments and empowered
+                        with by Digitaiken’s IAM experts to help mitigate risk and seamless identity solution
+                        rollout. 
                       </div>
                       <div className={style.dFlex}>
                         <div className={style.gunPointWrapper}>
