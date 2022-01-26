@@ -160,3 +160,24 @@
 .mblInput{
     padding-left: 52px;
 }
+
+@media screen and (max-width: 480px) {
+    .content{
+        flex-direction: column;
+    }
+    .loginCard{
+        width: 100%;
+    }
+    .container{
+        padding: 0 6vw;
+    }
+    .slotCard{
+        width: 100%;
+        height: 50px;
+        margin-right: 0;
+    }
+    .paymentDetailsCard{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

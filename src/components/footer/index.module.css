@@ -46,9 +46,10 @@
     width: 10.41vw;
     margin-top: 50px;
 }
-.redirectionWrapper div{
+.redirectionWrapper li{
     color: #fff;
     cursor: pointer;
+    list-style: none;
 }
 .input::placeholder{
     color: #fff;
@@ -134,13 +135,67 @@ a{
     display: flex;
 }
 
-.legal div{
+.legal li{
     margin: 0 10px;
     cursor: pointer;
     list-style: none;
     cursor: pointer;
+    list-style: none;
 }
 
-.legal div a{
+.legal li a{
     color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    .firmContent{
+        width: 100%;
+    }
+    .logo{
+        width: auto;
+    }
+    .inputWrapper{
+        width: 100%;
+    }
+    .button{
+        width: 40%;
+    }
+    .redirectionWrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 20px;
+    }
+    .redirectionWrapper li{
+        margin-right: 40px;
+        color: #fff;
+        list-style: disc;
+    }
+    .container{
+        height: auto;
+    }
+    .socialFooter{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        height: auto;
+        font-size: 20px;
+    }
+    .legal{
+        flex-wrap: wrap;
+        margin: 25px 0;
+    }
+    .legal li{
+        margin-left: 15px;
+        color: #fff;
+        margin-right: 20px;
+        list-style: disc;
+    }
+    .socialWrap img{
+        width: 50px;
+        height: 50px;
+    }
 }

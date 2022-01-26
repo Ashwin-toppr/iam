@@ -67,12 +67,12 @@ export default function Footer() {
               }
             </div>
             <div className={style.redirections}>
-              <div className={style.redirectionWrapper} >
-                <div onClick={()=>navigate('/aboutus')} >About Us</div>
-                <div onClick={()=>navigate('/team')} >Team</div>
-                <div onClick={()=>navigate('/course')} >Course</div>
-                <div onClick={()=>navigate('/contact')}>Contact Us</div>
-              </div>
+              <ul className={style.redirectionWrapper} >
+                <li onClick={()=>navigate('/aboutus')} >About Us</li>
+                <li onClick={()=>navigate('/team')} >Team</li>
+                <li onClick={()=>navigate('/course')} >Course</li>
+                <li onClick={()=>navigate('/contact')}>Contact Us</li>
+              </ul>
             </div>
             <div className={style.locations}>
               <div className={style.locationWrap}>
@@ -107,11 +107,11 @@ export default function Footer() {
         </div>
           <div className={style.socialFooter}>
             <div className=''>ALL RIGHTS RESERVED BY DIGITAIKEN</div>
-            <div className={style.legal}  >
-              <div><a href='https://admin.digitaikenacademy.com/asset/privacy_policy.pdf' target="_blank" >Privacy Policy</a></div>
-              <div><a href='https://admin.digitaikenacademy.com/asset/terms_conditions.pdf' target="_blank" >Term of Use</a></div>
-              <div onClick={()=>navigate("/contact")} >Contact Us</div>
-            </div>
+            <ul className={style.legal}  >
+              <li><a href='https://admin.digitaikenacademy.com/asset/privacy_policy.pdf' target="_blank" >Privacy Policy</a></li>
+              <li><a href='https://admin.digitaikenacademy.com/asset/terms_conditions.pdf' target="_blank" >Term of Use</a></li>
+              <li onClick={()=>navigate("/contact")} >Contact Us</li>
+            </ul>
             <div className={style.socialWrap}>
               <a href='https://www.linkedin.com/company/digitaiken/mycompany/?viewAsMember=true' target="_blank">
                 <img src={`${process.env.PUBLIC_URL}/images/linkedIn.svg`} />

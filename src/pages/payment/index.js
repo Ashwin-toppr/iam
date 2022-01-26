@@ -89,6 +89,7 @@ export default function Payment() {
             const data = res.data.data.res
             window.location.href = data.payment_link
             localStorage.setItem("BOOKING_CODE",data.booking_code)
+            localStorage.setItem("payment_link",data.payment_link)
             setpaymentLoading(false)
         })
         .catch((res)=>{

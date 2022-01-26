@@ -101,3 +101,28 @@
         padding-bottom: 10px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .title{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .caroContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        height: auto;
+    }
+    .carocard{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .profilePic{
+        width: 30vw;
+        height: 30vw;
+    }
+    .desc{
+        margin-top: 30vw;
+    }
+}

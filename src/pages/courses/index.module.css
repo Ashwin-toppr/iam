@@ -123,3 +123,26 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .content{
+        flex-direction: column;
+        /* margin-top: 10vw; */
+    }
+    .bannerImage{
+        width: 90vw;
+        height: auto;
+    }
+    .miniTitle{
+        font-size: 20px;
+    }
+    .curriculumContent{
+        flex-direction: column;
+    }
+    .curriculimCard{
+        width: 100%;
+        margin: 0;
+        height: 475px;
+        margin-bottom: 40px;
+    }
+}

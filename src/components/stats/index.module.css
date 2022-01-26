@@ -33,3 +33,20 @@
 .itemicon{
     margin-right: 10px;
 }
+
+
+@media screen and (max-width: 480px) {
+    .container{
+        height: 20vh;
+    }
+    .container>img{
+        height: 20vh;
+    }
+    .contentWrapper{
+        flex-wrap: wrap;
+    }
+    .item{
+        flex: 1 1;
+        margin: 5px 10px;
+    }
+}

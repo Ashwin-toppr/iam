@@ -115,3 +115,28 @@
 .errMsg{
     color: red;
 }
+
+@media screen and (max-width: 480px) {
+    .cardsContainer{
+        flex-direction: column;
+    }
+    .detailsCard{
+        margin-right: 0;
+        box-shadow: 0px 3px 6px #00000029;
+        margin-top: 20px;
+    }
+    .detailsWrap{
+        flex-direction: column;
+    }
+    .flex{
+        margin: 15px 0;
+    }
+    .useInput{
+        width: 100%;
+        margin: 20px 0;
+        padding: 30px 20px;
+    }
+    .input{
+        width: 100%;
+    }
+}

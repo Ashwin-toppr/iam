@@ -13,8 +13,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    min-height: 580px;
+    min-height: 80vh;
+    height: auto;
+    padding: 10vh 0 15vh;
 }
 .content{
     display: flex;
@@ -86,4 +87,29 @@
     position: absolute;
     bottom: -10px;
     right: -10px;
+}
+
+@media screen and (max-width: 480px) {
+ .miniTitle{
+     font-size: 16px;
+ }   
+ .title{
+     text-align: center;
+ }
+ .card{
+     width: 82vw;
+     padding: 0 10px;
+     justify-content: center;
+ }
+ .profilePic{
+     width: 40vw;
+     height: 40vw;
+ }
+ .quote img{
+     width: 15vw;
+ }
+ .experince{
+     font-size: 20px;
+     text-align: center;
+ }
 }

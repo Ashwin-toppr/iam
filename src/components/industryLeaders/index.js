@@ -16,7 +16,7 @@ export default function IndustryLeaders() {
   return (
     <div ref={industryRef} className={style.container}>
 
-      <Carousel autoplay={true} >
+      <Carousel  >
         <div>
           <div className={style.contentWrap}>
             <div className={style.content}>
