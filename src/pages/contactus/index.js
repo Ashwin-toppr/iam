@@ -1,10 +1,12 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from '../../components/Header'
 import s from './index.module.css'
 import cx from 'classnames'
 import Footer from '../../components/footer'
 import axios from 'axios'
 import {  toast } from 'react-toastify';
+
+import { LoadingOutlined } from '@ant-design/icons';
 
 export default function ContactUs() {
     const [data,setData] = useState({
@@ -13,8 +15,10 @@ export default function ContactUs() {
         message:''
     })
     const [showErrMsg, setshowErrMsg] = useState(false)
+    const [loading,setLoading] = useState(false)
 
     const handleSubmit = () => {
+        setLoading(true)
         axios.post('https://admin.digitaikenacademy.com/api/candidate/android/save-contact-enquiry',{
             ...data
         })
@@ -24,21 +28,24 @@ export default function ContactUs() {
                 email:'',
                 message:''
             })
+            setLoading(false)
+            debugger
             toast(res.data.message, {
-                position: "top-bottom",
+                position: "bottom-right",
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-                type:"error"
+                type:"success"
             });
         })
         .catch((res)=>{
             console.log(res.data)
+            setLoading(false)
             toast(res.response.data.message, {
-                position: "top-bottom",
+                position: "bottom-right",
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -49,6 +56,8 @@ export default function ContactUs() {
                 });
         })
     }
+
+
 
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -94,11 +103,11 @@ export default function ContactUs() {
                             <div className={s.detailTitle}>
                             Get in Touch
                             </div>
-                            <input  className={s.input} onChange={handleChange} value={data?.name} name='name' placeholder='Full Name' />
+                            <input  className={s.input} autoComplete='off' onChange={handleChange} value={data?.name} name='name' placeholder='Full Name' />
                             <input  className={s.input} onChange={handleChange} value={data?.email} name='email' autoComplete="off" placeholder='Email' />
                             {showErrMsg && <div className={s.errMsg} >Please enter valid email!</div>}
                             <textarea onChange={handleChange} value={data?.message} className={cx(s.input,s.textarea)} name='message' placeholder='Type Message' />
-                            <button className={s.button} onClick={handleSubmit} >Send Message</button>
+                            <button className={s.button} onClick={handleSubmit} >Send Message {loading && <LoadingOutlined/>} </button>
                         </div>
                     </div>
                 <Footer/>
