@@ -6,7 +6,7 @@ import Oppotunities from "./components/jobOpportunities";
 import IndustryLeaders from "./components/industryLeaders";
 import Testimonial from "./components/testimonial";
 import Footer from "./components/footer";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
 import HomeLanding from "./pages/Home";
 import Courses from "./pages/courses";
 import CourseItem from "./pages/courseItem";
@@ -23,7 +23,7 @@ import AboutUs from "./pages/aboutus";
 function App() {
   return (
     <>
-      <Router>
+      < HashRouter>
         <Routes>
           <Route exact path="/" element={<HomeLanding />} />
           <Route path="/course" element={<Courses />} />
@@ -34,7 +34,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/team" element={<HomeLanding />} />
         </Routes>
-      </Router>
+      </ HashRouter>
       <ToastContainer/>
     </>
   );

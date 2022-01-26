@@ -108,13 +108,13 @@ export default function Footer() {
           <div className={style.socialFooter}>
             <div className=''>ALL RIGHTS RESERVED BY DIGITAIKEN</div>
             <div className={style.legal}  >
-              <div><a href='https://admin.digitaikenacademy.com/api/candidate/android/privacypolicy' target="_blank" >Privacy Policy</a></div>
-              <div><a href='https://admin.digitaikenacademy.com/api/candidate/android/termcondition' target="_blank" >Term of Use</a></div>
+              <div><a href='https://admin.digitaikenacademy.com/asset/privacy_policy.pdf' target="_blank" >Privacy Policy</a></div>
+              <div><a href='https://admin.digitaikenacademy.com/asset/terms_conditions.pdf' target="_blank" >Term of Use</a></div>
               <div onClick={()=>navigate("/contact")} >Contact Us</div>
             </div>
             <div className={style.socialWrap}>
               <a href='https://www.linkedin.com/company/digitaiken/mycompany/?viewAsMember=true' target="_blank">
-                <img src={`${process.env.PUBLIC_URL}/images/linkedin.svg`} />
+                <img src={`${process.env.PUBLIC_URL}/images/linkedIn.svg`} />
               </a>
               <a href='https://www.youtube.com/channel/UCg39zTOwf6BwYxx-H54xDgA' target="_blank" >
                 <img src={`${process.env.PUBLIC_URL}/images/youtube.svg`} />
