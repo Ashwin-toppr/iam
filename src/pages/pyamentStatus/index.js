@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useState } from 'react'
 import { Modal, Skeleton } from 'antd';
 import s from './index.module.css'
 import axios from 'axios';
-import { useState } from 'react/cjs/react.development';
 
 export default function PaymentStatus() {
     const [isSuccess, setIsSuccess] = useState(false);

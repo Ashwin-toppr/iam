@@ -11,7 +11,7 @@ import Testimonial from '../../components/testimonial';
 export default function HomeLanding() {
     return (
       <div>
-        {/* <Header/> */}
+        <Header/>
         <Home />
         <CommonSection isTrainingSection={true} />
         <CommonSection isTrainingSection={false} />
