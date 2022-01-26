@@ -105,3 +105,26 @@
     align-items: flex-start;
 }
 
+
+@media screen and (max-width: 480px) {
+    .contentWrapper{
+        flex-direction : column;
+    }
+    .videoContet{
+        width: 100%;
+        margin-top: 70px;
+    }
+    .caroContentBody{
+        width: 100%;
+    }
+    .caroContentDesc{
+        width: 90%;
+    }
+    .ctaWrapper{
+        width: 100%;
+    }
+    .primaryCta{
+        width: 100%;
+        height: 40px;
+    }
+}
