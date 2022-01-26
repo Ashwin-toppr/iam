@@ -40,8 +40,8 @@ export default function Payment() {
             setCourseData(data);
             const discount = +((data.price * 50) / 100).toFixed()
             const gst = +((+discount * 18) / 100).toFixed();
-            const subTotal = +discount + +gst
-            const total = +subTotal 
+            const subTotal = +discount
+            const total = +discount + +gst
             const prices = {
                 gst,
                 subTotal,
@@ -179,9 +179,13 @@ export default function Payment() {
                     </div>
                     <div>
                         <div className={s.courseDesc}>
-                        <div className={cx(s.courseSubTitle, s.fw_600)} >
+                        <div className={cx(s.courseSubTitle, s.fw_500)} >
                             <div>Discount (Launch price)</div>
                             <div>INR -{prices.discount.toLocaleString()}</div>
+                        </div>
+                        <div className={cx(s.courseSubTitle,s.fw_700)} >
+                            <div>Sub Total</div>
+                            <div>{prices.subTotal.toLocaleString()}</div>
                         </div>
                         </div>
                         <div className={s.courseDesc}>
@@ -190,10 +194,6 @@ export default function Payment() {
                             <div>GST 18%</div>
                             <div>INR {prices.gst.toLocaleString()}</div>
                         </div>
-                        {/* <div className={s.courseSubTitle} >
-                            <div>Sub Total</div>
-                            <div>{prices.gst}</div>
-                        </div> */}
                         </div>
                         <div className={cx(s.courseDesc, s.borderNone, s.fw_700)}>
                         <div className={cx(s.courseSubTitle,s.fw_700)} >

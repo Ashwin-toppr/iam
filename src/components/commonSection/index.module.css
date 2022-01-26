@@ -62,4 +62,11 @@
         width: 70vw;
         height: 70vw;
     }
+    .heading{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .cardText{
+        font-size: 10px;
+    }
 }

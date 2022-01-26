@@ -47,7 +47,7 @@ export default function Header() {
                 <div className={s.mwebMenu} >
                     <div className={s.links}>
                         {headerItems.map((item,i)=>(
-                            <Link className={s.linkItem} key={i} to={`/${item.route}`} >{item.label}</Link>
+                            <Link className={s.linkItem} onClick={()=>setIsMwebMenuOpen(false)} key={i} to={`/${item.route}`} >{item.label}</Link>
                         ))}
                     </div>
                     <div >
