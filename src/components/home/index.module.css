@@ -103,6 +103,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    min-height: 350px;
 }
 
 
