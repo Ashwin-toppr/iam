@@ -1,7 +1,7 @@
 .container{
     width: 100vw;
-    height: 100vh;
-    min-height: 580px;
+    /* height: 100vh; */
+    min-height: 680px;
     background-color: #F9F9F9;
     display: flex;
     justify-content: center;

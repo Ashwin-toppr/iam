@@ -171,9 +171,8 @@ export default function Payment() {
               {!loading ? (
                 <div className={s.paymentDetailsCard}>
                     <div className={s.courseDesc}>
-                        <div className={s.fw_300} >{courseData.name}</div>
                         <div className={s.courseSubTitle} >
-                            <div className={s.fw_300} >Management</div>
+                        <div className={s.fw_300} >{courseData.name}</div>
                             <div className={s.fw_700}>INR {courseData.price.toLocaleString()}</div>
                         </div>
                     </div>
@@ -185,7 +184,7 @@ export default function Payment() {
                         </div>
                         <div className={cx(s.courseSubTitle,s.fw_700)} >
                             <div>Sub Total</div>
-                            <div>{prices.subTotal.toLocaleString()}</div>
+                            <div>INR {prices.subTotal.toLocaleString()}</div>
                         </div>
                         </div>
                         <div className={s.courseDesc}>

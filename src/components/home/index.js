@@ -16,10 +16,10 @@ export default function Home() {
               
               <div className={style.section1}>
                 <div className={style.contentWrapper}>
-                    <div className={style.caroContentBody}>
-                      <div className={style.caroContentHeading}>Who we are ?</div>
+                <div className={style.caroContentBody}>
+                      <div className={style.caroContentHeading}>IAM School</div>
                       <div className={style.caroContentDesc}>
-                      IAM School is a craft by Industry’s best Identity professionals to help develop talented skills… 
+                      Digitaiken is a digital solution company working on product Development, digital workplace solutions and Identity and Access management.
                       </div>
                       <div className={style.dFlex}>
                         <div className={style.gunPointWrapper}>
@@ -36,6 +36,7 @@ export default function Home() {
                           {/* <button className={style.secondaryCta} >Demo Class</button> */}
                       </div>
                     </div>
+                    
                   <div className={style.videoContet}>
                     <iframe class="mw-youtube-video" width="100%" height="100%" src="https://www.youtube.com/embed/uH8v47EQ9H8?enablejsapi=1&version=3&playerapiid=ytplayer" modestbranding="0"  controls="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
@@ -74,10 +75,10 @@ export default function Home() {
               </div>
               <div className={style.section1}>
                 <div className={style.contentWrapper}>
-                    <div className={style.caroContentBody}>
-                      <div className={style.caroContentHeading}>IAM School</div>
+                <div className={style.caroContentBody}>
+                      <div className={style.caroContentHeading}>Who we are ?</div>
                       <div className={style.caroContentDesc}>
-                      Digitaiken is a digital solution company working on product Development, digital workplace solutions and Identity and Access management.
+                      IAM School is a craft by Industry’s best Identity professionals to help develop talented skills… 
                       </div>
                       <div className={style.dFlex}>
                         <div className={style.gunPointWrapper}>

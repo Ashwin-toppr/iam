@@ -34,8 +34,9 @@ export default function Header() {
                     </div>
                 }
                 {!isMobile && 
-                    <div >
+                    <div className={s.loginContainer}  >
                         <a href='https://learning.digitaikenacademy.com/login' className={s.loginCta} ><span><img src={`${process.env.PUBLIC_URL}/images/login_profile.svg`} /></span>Login</a>
+                        <img className={s.oktaImg}  src={`${process.env.PUBLIC_URL}/images/Okta_logo.svg`} />
                     </div>
                 }
 
@@ -52,6 +53,7 @@ export default function Header() {
                     </div>
                     <div >
                         <a href='https://learning.digitaikenacademy.com/login' className={s.loginCta} ><span><img src={`${process.env.PUBLIC_URL}/images/login_profile.svg`} /></span>Login</a>
+                        <img className={s.oktaImgMbl}  src={`${process.env.PUBLIC_URL}/images/Okta_logo.svg`} />
                     </div>
                 </div>
             ):null}

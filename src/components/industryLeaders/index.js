@@ -85,7 +85,7 @@ export default function IndustryLeaders() {
                 </div>
               </div>
               <div className={style.name}>Maria Martin Pognante</div>
-              <div className={style.experince}>Trainer</div>
+              <div className={style.experince}>Training Facilitator</div>
               <div className={style.desc}>
               María is a native Spanish speaker, proficient in English, living in Argentina. She is a University Professor in Letters and Teacher Aide at National University of Rosario. She is currently working as Content Specialist and Corporate Training Facilitator at DigiTaiken, training students as well as gaining knowledge herself.
               </div>

@@ -18,8 +18,9 @@ export default function PaymentStatus() {
             setMsg(res.data.message)
             // debugger
         })
-        .catch((res)=>{
+        .catch((err)=>{
             debugger
+            console.log(err.response);
             setIsSuccess(false)
             setIsloading(false)
         })

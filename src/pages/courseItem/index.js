@@ -83,7 +83,7 @@ export default function CourseItem() {
               ):null}
               {item.batch.length ? (
                 <>
-                  <div className={s.subTitle}>Batches:</div>
+                  <div className={s.subTitle}>Batch starting from:</div>
                   <ul className={s.list} >
                       {item.batch.map((item)=>(
                           <li className={s.listItem}  >{item.start_date} {`(${item.name})`}</li>

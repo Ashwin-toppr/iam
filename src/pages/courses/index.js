@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import style from './index.module.css'
 import { Skeleton } from 'antd';
 import { tuple } from 'antd/lib/_util/type';
+import cx from "classnames"
 
 export default function Courses() {
 
@@ -82,23 +83,23 @@ export default function Courses() {
                             </span>
                             <span>{item.duration}</span>
                           </div>
-                          <div className={style.bullet}>
+                          <div className={style.bullet} style={{alignItems : "flex-start"}} >
                             <span>
                               <img
                                 style={{ width: "24px", marginRight: "10px" }}
                                 src={`${process.env.PUBLIC_URL}/images/wallet.svg`}
                               />
                             </span>
-                            <span>{item.price.toLocaleString()} INR(+18% GST)</span>
+                            <div>{(item.price / 2).toLocaleString()} INR(+18% GST) <br/> <span style={{fontSize : "12px", opacity:'.5'}} ><strike>{item.price.toLocaleString()}</strike>INR </span><span style={{color:"#325E9C",fontSize : "12px"}} >(50% Off)</span>  </div>
                           </div>
                         </div>
                         {item.status ? 
                           <div>
                             <button
-                              className={style.buyNow}
+                              className={item.is_sold ? style.soldOutBtn : style.buyNow}
                               onClick={() => handleCtaClick(item.id)}
                             >
-                              Buy Now
+                              {item.is_sold ? "Sold Out" : "Buy Now"}
                             </button>
                           </div>:null
                         }

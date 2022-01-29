@@ -88,10 +88,10 @@ export default function ContactUs() {
                         <div className={s.detailsCard} >
                             <div className={s.detailTitle}>Contact us</div>
                             <div className={s.detailsWrap} >
-                                <div className={s.flex} >
+                                {/* <div className={s.flex} >
                                     <span className={s.mr_10} ><img src={`${process.env.PUBLIC_URL}/images/phone-ic.svg`} /></span>
                                     <span>+ 91 9876 54 3210</span>
-                                </div>
+                                </div> */}
                                 <div className={s.flex} >
                                     <span className={s.mr_10} ><img src={`${process.env.PUBLIC_URL}/images/email-ic.svg`} /></span>
                                     <span>iamschool@digitaiken.com</span>

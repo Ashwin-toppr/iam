@@ -3,7 +3,7 @@
 }
 
 .sectionContent{
-    height: 100vh;
+    /* height: 100vh; */
     min-height: 580px;
     display: flex;
     justify-content: center;

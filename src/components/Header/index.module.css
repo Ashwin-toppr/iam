@@ -34,7 +34,7 @@
 
 .linkItem{
     height: 100%;
-    margin-right: 4.9vw;
+    margin-right: 2.9vw;
     color: #333;
     margin-bottom: 0;
     font-size: 14px;
@@ -60,6 +60,14 @@
     margin: 0 10px;
 }
 
+.loginContainer{
+    display: flex;
+}
+
+.oktaImg {
+    margin-left: 66px;
+    width: 60px;
+}
 .mwebMenu{
     width: 100vw;
     background-color: #fff;
@@ -87,5 +95,9 @@
         width: 50vw;
         height: 50px;
         margin: 20px;
+    }
+    .oktaImgMbl{
+        width: 150px;
+        margin: 10px 30px 30px;
     }
 }
