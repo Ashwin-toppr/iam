@@ -98,6 +98,7 @@ export default function Courses() {
                             <button
                               className={item.is_sold ? style.soldOutBtn : style.buyNow}
                               onClick={() => handleCtaClick(item.id)}
+                              disabled={item.is_sold}
                             >
                               {item.is_sold ? "Sold Out" : "Buy Now"}
                             </button>

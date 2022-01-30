@@ -24,7 +24,7 @@ export default function Header() {
         <div className={s.container} >
             <div className={s.content} >
                 <div className={s.logo} onClick={()=>navigate('/iam')} >
-                    <img src={`${process.env.PUBLIC_URL}/images/logo_digi.png`} />
+                    <img src={`${process.env.PUBLIC_URL}/images/Digitaiken_Academy_logo.svg`} />
                 </div>
                 {!isMobile  && 
                     <div className={s.links}>
