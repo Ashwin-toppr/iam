@@ -56,7 +56,7 @@ export default function Footer() {
               Building the Next with passion
               </div>
               <div className={style.inputWrapper}>
-                <input className={style.input} onChange={handleChange} type={"text"} placeholder='Please enter a mail' />
+                <input className={style.input} onChange={handleChange} type={"text"} placeholder='Please enter your email' />
                 <button className={style.button} onClick={handleSubmit} >Subscribe {loading && <LoadingOutlined  />} </button>
               </div>
               {showErrMsg && 

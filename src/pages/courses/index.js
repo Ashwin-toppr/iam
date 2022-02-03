@@ -83,6 +83,7 @@ export default function Courses() {
                             </span>
                             <span>{item.duration}</span>
                           </div>
+                              {item.status ?
                           <div className={style.bullet} style={{alignItems : "flex-start"}} >
                             <span>
                               <img
@@ -90,11 +91,13 @@ export default function Courses() {
                                 src={`${process.env.PUBLIC_URL}/images/wallet.svg`}
                               />
                             </span>
-                            <div>{(item.price / 2).toLocaleString()} INR(+18% GST) <br/> <span style={{fontSize : "12px", opacity:'.5'}} ><strike>{item.price.toLocaleString()}</strike>INR </span><span style={{color:"#325E9C",fontSize : "12px"}} >(50% Off)</span>  </div>
+                            <div>{(item.price / 2).toLocaleString()} INR(+18% GST)<span className={style.textDanger} >*</span> <br/> <span style={{fontSize : "12px", opacity:'.5'}} ><strike>{item.price.toLocaleString()}</strike>INR </span><span style={{color:"#325E9C",fontSize : "12px"}} >(50% Off)</span>  </div>
                           </div>
+                            :null}
                         </div>
                         {item.status ? 
-                          <div>
+                          <div className={style.btnwrap} >
+                            <div><span className={style.textDanger} >*</span>Only for first 25 aspirants</div>
                             <button
                               className={item.is_sold ? style.soldOutBtn : style.buyNow}
                               onClick={() => handleCtaClick(item.id)}

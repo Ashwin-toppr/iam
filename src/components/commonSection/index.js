@@ -66,7 +66,7 @@ export default function CommonSection({ isTrainingSection }) {
                 </div>
                 <div className={style.cardText}>
                   {isTrainingSection
-                    ? "Gain knowledge on Secure Identity Management and mobility concepts"
+                    ? "Learn from experienced OKTA professionals and earn practical skills."
                     : "You can be one of the OKTA professionals to be working with Digitaiken Tech Corporation"}
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function CommonSection({ isTrainingSection }) {
                 </div>
                 <div className={style.cardText}>
                   {isTrainingSection
-                    ? "Gain knowledge on Secure Identity Management and mobility concepts"
+                    ? "Get familiarise with modern OKTA features and concepts"
                     : "Get assistance from Digitaiken’s team to get placed with some of the top brands"}
                 </div>
               </div>

@@ -101,3 +101,8 @@
         margin: 10px 30px 30px;
     }
 }
+.okataA{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}

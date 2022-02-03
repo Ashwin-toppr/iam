@@ -36,7 +36,9 @@ export default function Header() {
                 {!isMobile && 
                     <div className={s.loginContainer}  >
                         <a href='https://learning.digitaikenacademy.com/login' className={s.loginCta} ><span><img src={`${process.env.PUBLIC_URL}/images/login_profile.svg`} /></span>Login</a>
+                        <a href='https://www.okta.com/' target="_blank" className={s.okataA}   >
                         <img className={s.oktaImg}  src={`${process.env.PUBLIC_URL}/images/Okta_logo.svg`} />
+                        </a>
                     </div>
                 }
 
@@ -53,7 +55,9 @@ export default function Header() {
                     </div>
                     <div >
                         <a href='https://learning.digitaikenacademy.com/login' className={s.loginCta} ><span><img src={`${process.env.PUBLIC_URL}/images/login_profile.svg`} /></span>Login</a>
-                        <img className={s.oktaImgMbl}  src={`${process.env.PUBLIC_URL}/images/Okta_logo.svg`} />
+                        <a href='https://www.okta.com/' className={s.okataA} target="_blank"  >
+                            <img className={s.oktaImgMbl}  src={`${process.env.PUBLIC_URL}/images/Okta_logo.svg`} />
+                        </a>
                     </div>
                 </div>
             ):null}
