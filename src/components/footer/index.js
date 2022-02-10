@@ -45,7 +45,7 @@ export default function Footer() {
       <div className={style.container}>
         <div className={style.content}>
           <div className={style.wrapper}>
-            <div className={style.firmContent}>
+            <div className={style.firmContent}   >
               <div>
                 <img
                   className={style.logo}
