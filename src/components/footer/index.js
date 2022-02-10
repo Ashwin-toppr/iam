@@ -42,7 +42,7 @@ export default function Footer() {
   }
 
     return (
-      <div className={style.container}>
+      <div className={style.container}  >
         <div className={style.content}>
           <div className={style.wrapper}>
             <div className={style.firmContent}>
